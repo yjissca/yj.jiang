@@ -1,4 +1,35 @@
 Python 3.7.5 (tags/v3.7.5:5c02a39a0b, Oct 15 2019, 00:11:34) [MSC v.1916 64 bit (AMD64)] on win32
+import csv
+import os
+import numpy as np
+import pandas as pd
+from snownlp import sentiment
+from snownlp import seg
+
+train_file_name = 'Train_DataSet.csv'
+train_label_name = 'Train_DataSet_Label.csv'
+
+train_file = pd.read_csv(train_file_name)
+train_label = pd.read_csv(train_label_name)
+
+f1 = open('pos.txt','w',encoding='utf-8')
+f2 = open('neg.txt','w',encoding='utf-8')
+
+for i in range(0,train_file.shape[0]):
+	for j in range(i,train_label.shape[0]):
+		if train_file.id[i]== train_label.id[j]:
+			if train_label.label[j] == 2:
+				f2.write(train_file.title[i] + '\n')
+			elif train_label.label[j] == 1:
+				f1.write(train_file.title[i] + '\n')
+				f2.write(train_file.title[i] + '\n')
+			else:
+				f1.write(train_file.title[i] + '\n')
+			break
+			
+f1.close()
+f2.close()
+-------------------------------------------------------------------------------
 Type "help", "copyright", "credits" or "license()" for more information.
 >>> import jieba
 >>> import numpy as np
