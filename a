@@ -1,0 +1,90 @@
+PREFIX : <http://www.kgdemo.com#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX vocab: <http://localhost:8890/JYJ/vocab/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX map: <http://localhost:8890/JYJ/#>
+PREFIX db: <http://localhost:8890/JYJ/>
+
+SELECT DISTINCT ?s WHERE {
+  ?a  rdf:type :Person.
+  ?b  rdf:type :Movie.
+  ?a :hasActedIn ?b.
+  ?a :personName ?s
+}
+
+
+
+PREFIX : <http://www.kgdemo.com#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX vocab: <http://localhost:8890/JYJ/vocab/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX map: <http://localhost:8890/JYJ/#>
+PREFIX db: <http://localhost:8890/JYJ/>
+
+CONSTRUCT { ?a :job :actor } WHERE {
+  ?a  rdf:type :Person.
+  ?b  rdf:type :Movie.
+  ?a :hasActedIn ?b.
+}
+
+PREFIX : <http://www.kgdemo.com#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX vocab: <http://localhost:8890/JYJ/vocab/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX map: <http://localhost:8890/JYJ/#>
+PREFIX db: <http://localhost:8890/JYJ/>
+
+ASK {
+  ?a :personName '÷‹–«≥€'.
+  ?b :movieTitle '‘¬π‚±¶∫–'.
+  ?a :hasActedIn ?b
+}
+
+
+PREFIX : <http://www.kgdemo.com#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX vocab: <http://localhost:8890/JYJ/vocab/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX map: <http://localhost:8890/JYJ/#>
+PREFIX db: <http://localhost:8890/JYJ/>
+
+DESCRIBE ?x WHERE{ 
+   ?x :personName '÷‹–«≥€' 
+}
+
+
+PREFIX : <http://www.kgdemo.com#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX vocab: <http://localhost:8890/JYJ/vocab/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX map: <http://localhost:8890/JYJ/#>
+PREFIX db: <http://localhost:8890/JYJ/>
+
+SELECT DISTINCT ?n WHERE {
+  ?s :hasActedIn ?o.
+  ?s :personBirthDay ?r.
+  ?s :personName ?n
+FILTER regex(?r ,"1960", "i")
+}
+
+
+
+PREFIX : <http://www.kgdemo.com#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX vocab: <http://localhost:8890/JYJ/vocab/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX map: <http://localhost:8890/JYJ/#>
+PREFIX db: <http://localhost:8890/JYJ/>
+
+SELECT ?n WHERE {
+  ?s rdf:type :Person.
+  ?s :personName '÷‹–«≥€'.
+  ?s :hasActedIn ?o.
+  ?o :movieTitle ?n
+}
