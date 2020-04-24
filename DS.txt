@@ -1,0 +1,9 @@
+atc17-Poseidon_ An Efficient Communication Architecture for Distributed Deep Learning on GPU Clusters
+
+https://pdfs.semanticscholar.org/91ad/e796ba06594ed89c1ae3afcb10d528a289a5.pdf
+http://xunzhangthu.org/talk/PoseidonT11.pdf
+
+
+
+
+BAKAYARO000
