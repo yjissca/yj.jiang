@@ -1,4 +1,13 @@
 https://www.jianshu.com/p/2292f4dc85af
+1.1       mapreduce/common_map.go    mapreduce/common_reduce.go
+
+
+2.1 2.2      schedule.go  
+
+
+
+2.3       main/ii.go   
+
 人工智能数学基础 小象学院
 
 B+树的基本性质：（请自学了解本题内容，不需要回答）
