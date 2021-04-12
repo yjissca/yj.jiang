@@ -18,3 +18,10 @@ with some struggles,I have decided that after the end of the school year, I will
 Maybe some of the above words are redundant, but I hope to explain my personal situation to you clearly and I wish you could understand and agree to my withdrawal from the course.
 Thanks & Best Regards
 Yujia Jiang
+
+
+
+Unsupervised Learning of Video Representations using LSTMs
+
+
+https://www.zhuanzhi.ai/document/3ee1fccb74f8ec476df52111fcc2cecb
