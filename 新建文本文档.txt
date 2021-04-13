@@ -31,3 +31,8 @@ https://blog.csdn.net/weixin_42137700/article/details/103324667
 Self-supervised Representation Learning from Videos for Facial Action Unit Detection
 Shuffle and Learn: Unsupervised Learning using Temporal Order Verification. 
 Unsupervised Learning of Video Representations using LSTMs.
+Unsupervised Learning of Visual Representations using Videos
+Tracking Emerges by Colorizing Videos
+Self-Supervised Learning of Pretext-Invariant Representation
+
+
