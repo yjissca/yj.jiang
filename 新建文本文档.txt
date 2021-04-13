@@ -35,4 +35,5 @@ Unsupervised Learning of Visual Representations using Videos
 Tracking Emerges by Colorizing Videos
 Self-Supervised Learning of Pretext-Invariant Representation
 
-
+1）有关的问题是什么，为什么这个问题很重要？ 2）如何解决，完全解决或部分解决问题？ 3）它与您阅读过的其他论文有没有关系？
+所关注的问题是什么？已完成的工作？将要完成的工作？
