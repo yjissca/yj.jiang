@@ -137,3 +137,18 @@ if __name__ == '__main__':
     input_shape = 100
     model_save_path = './corpus_model.h5'
     model_train(input_shape, filepath, model_save_path)
+
+http://c-s-a.org.cn/html/2018/8/6483.html
+
+
+https://www.jianshu.com/p/158c3f02a15b
+
+https://www.jiqizhixin.com/articles/LSTM-implement-in-Keras
+
+网络购物在给人们带来便捷的同时也具有很多不可避免的弊端, 无法真实的感受到商品的属性与尺寸, 为购买商品带来了很大的风险。
+所以我们经常都会查看产品的各种属性以及别人留下的评论信息在我们做出购买商品决策之前来提供参考.
+对商品评论信息的情感倾向分析不仅能够在消费者购买商品是提供指导, 也可以使商家客观的认识到自己商品的优缺点,来改进自己的商品.
+因此对商品评论的文本情感分析不仅具有巨大的商业上的价值也可以对学术研究用到实际领域起到很好的推动作用。
+本文将采用LSTM模型，训练一个能够识别评价文本small, fit, large三种评价的分类器。
+
+
